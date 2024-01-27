@@ -1,0 +1,53 @@
+    body {
+             background-image: linear-gradient(rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5)), url('registerbg.jpg'); 
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+             height: 100vh;
+             margin: 0;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             }
+            .registration-container {
+             background-color: rgba(255, 255, 255, 0.8);
+             padding: 20px;
+             border-radius: 10px;
+             text-align: center;
+             max-width: 400px; /* Limit container width for better readability */
+             margin: 0 auto; /* Center the container horizontally */
+              }
+
+            .form-group {
+             margin: 10px 0;
+             text-align: left; /* Align form labels and inputs to the left */
+             }
+
+             label {
+             display: block; /* Display labels as blocks for proper spacing */
+             }
+
+
+
+
+
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            }
+
+             button[type="submit"] {
+             background-color: #007bff;
+             color: #fff;
+             padding: 10px 20px;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+              }

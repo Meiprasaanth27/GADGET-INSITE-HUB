@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="/gadget/register.css"> <!-- You can link your CSS file here -->
+    <script>
+    function validateForm() {
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirm-password").value;
+
+        // Simple validation
+        if (username == "" || email == "" || password == "" || confirmPassword == "") {
+            alert("All fields must be filled out");
+            return false;
+        }
+
+        // Check if passwords match
+        if (password !== confirmPassword) {
+            alert("Passwords do not match");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+<script src="/gadget/register.js"></script>
+
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Registration</h1>
+        <form action="/gadget/register_process.php" method="POST" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="/gadget/login.html">Login here</a></p>
+    </div>
+</body> 
+</html>

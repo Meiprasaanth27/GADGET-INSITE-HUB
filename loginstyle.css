@@ -1,0 +1,71 @@
+
+body {
+    background: linear-gradient(rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5)), url('loginbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Adjust as needed */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-250%);
+    width: 100%;
+}
+
+.background-content h1 {
+    margin: 0;
+    color: #007bff; /* Adjust the text color as needed */
+}
+.background-content p {
+    margin: 10px 0;
+    color: #007bff; /* Adjust the text color as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; /* Align form elements to the left */
+    max-width: 400px; /* Limit container width for better readability */
+}
+
+/* Style the form labels */
+label {
+    display: block; /* Display labels as blocks for proper spacing */
+    margin-bottom: 5px; /* Add spacing between labels */
+}
+
+/* Style the form inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
